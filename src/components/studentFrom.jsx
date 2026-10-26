@@ -1,7 +1,10 @@
-function StudentForm() {
+ import mee from"C:/Users/User/Desktop/gestion-etudiants/src/components/studentFrom.jsx";
+ import './StudentCard.css'
+ function StudentForm() {
   return (
     <div className="student">
       <h1>Fiche étudiant</h1>
+      <img src={props.img} alt="photo de Mariem"/>
 
       <p><strong>Nom & Prénom:</strong>Mariem Aloui</p>
       <p><strong>Email:</strong>mariemaloui2006@gmail.com</p>
