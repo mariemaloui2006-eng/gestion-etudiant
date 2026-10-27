@@ -1,24 +1,107 @@
-.student{
-  text-align:center;
-  margin-top:50px;
-  font-family:Arial,sans-serif;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f8;
 }
 
-.student h1{
-  font-size:40px;
-  margin-bottom:30px;
-}
-.student p {
-  margin:10px;
-  font-size:18px;
-}
-img{
-  width: 100;
-}
 .container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+  width: 90%;
+  max-width: 1100px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.container h1 {
+  color: #1f2937;
+  margin-bottom: 25px;
+}
+
+.container > button {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.container > button:hover {
+  background-color: #1d4ed8;
+}
+
+.container > input {
+  width: 300px;
+  max-width: 80%;
+  padding: 11px 15px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+}
+
+.container > input:focus {
+  border-color: #2563eb;
+}
+
+.student-card {
+  background-color: white;
+  width: 300px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 15px;
   padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.student-card h2 {
+  color: #1f2937;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.student-card p {
+  color: #4b5563;
+  margin: 8px 0;
+}
+
+/* Bouton afficher/masquer */
+.student-card button {
+  border: none;
+  color: white;
+  padding: 9px 12px;
+  border-radius: 7px;
+  cursor: pointer;
+  margin: 5px 3px;
+  font-size: 14px;
+}
+
+/* Afficher / Masquer */
+.student-card button:first-of-type {
+  background-color: #2563eb;
+}
+
+.student-card button:first-of-type:hover {
+  background-color: #1d4ed8;
+}
+
+/* Modifier */
+.student-card button:nth-of-type(2) {
+  background-color: #f59e0b;
+}
+
+.student-card button:nth-of-type(2):hover {
+  background-color: #d97706;
+}
+
+/* Supprimer */
+.student-card button:nth-of-type(3) {
+  background-color: #dc2626;
+}
+
+.student-card button:nth-of-type(3):hover {
+  background-color: #b91c1c;
 }
