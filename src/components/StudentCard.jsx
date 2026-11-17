@@ -22,8 +22,6 @@ function StudentCard({
   return (
     <div className="student-card">
 
-      <img src={image} alt="Student" />
-
       <h2>
         {prenom} {nom}
       </h2>

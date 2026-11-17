@@ -1,7 +1,11 @@
 import { useState } from "react";
 import StudentCard from "./components/StudentCard.jsx";
 import "./App.css";
-
+import StudentForm from "./components/studentFrom.jsx";
+import Header from "./components/Header.jsx"
+import Footer from "./components/footer.jsx"
+import Navbar from "./components/Navbar.jsx"
+<components></components>
 const etudiantsInitial = [
   {
     prenom: "slim",
@@ -83,6 +87,10 @@ function App() {
   );
 
   return (
+    <>
+    <Header />
+    <Navbar />
+<StudentForm />
     <div className="container">
 
       <h1>Liste des étudiants</h1>
@@ -121,6 +129,8 @@ function App() {
       ))}
 
     </div>
+    <Footer />
+    </>
   );
 }
 
